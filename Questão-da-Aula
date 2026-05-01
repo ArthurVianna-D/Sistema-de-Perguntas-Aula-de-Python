@@ -16,3 +16,26 @@ idade = 17
 maior_de_idade = idade >= 18
 print('Nome:', nome, 'Idade:', idade)
 print('É maior?', maior_de_idade)
+
+# Podemos alterar o valor de uma variável ao longo do programa
+idade = idade + 1  # Arthur fez aniversário
+print('Nova idade:', idade)
+
+# Strings podem ser concatenadas (juntadas)
+sobrenome = 'Vianna'
+nome_completo = nome + ' ' + sobrenome
+print('Nome completo:', nome_completo)
+
+# Também podemos usar f-strings (forma mais moderna)
+print(f'Olá, meu nome é {nome_completo} e eu tenho {idade} anos.')
+
+# Tipos de dados
+# str -> texto
+# int -> número inteiro
+# float -> número com casas decimais
+# bool -> verdadeiro ou falso
+
+altura = 1.75  # float
+peso = 70      # int
+print('Altura:', altura, 'Tipo:', type(altura))
+print('Peso:', peso, 'Tipo:', type(peso))
