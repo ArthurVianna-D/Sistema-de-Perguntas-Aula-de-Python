@@ -39,3 +39,58 @@ altura = 1.75  # float
 peso = 70      # int
 print('Altura:', altura, 'Tipo:', type(altura))
 print('Peso:', peso, 'Tipo:', type(peso))
+
+# Operações matemáticas básicas
+soma = 10 + 5
+subtracao = 10 - 5
+multiplicacao = 10 * 5
+divisao = 10 / 5
+
+print('Soma:', soma)
+print('Subtração:', subtracao)
+print('Multiplicação:', multiplicacao)
+print('Divisão:', divisao)
+
+# Operadores de comparação retornam booleanos (True ou False)
+print('Idade é maior que 18?', idade > 18)
+print('Idade é igual a 18?', idade == 18)
+print('Idade é diferente de 18?', idade != 18)
+
+# Podemos usar condicionais para tomar decisões
+if idade >= 18:
+    print('Pode tirar carteira de motorista.')
+else:
+    print('Ainda não pode tirar carteira.')
+
+# Listas (arrays em outras linguagens)
+frutas = ['maçã', 'banana', 'laranja']
+print('Lista de frutas:', frutas)
+
+# Acessando elementos da lista
+print('Primeira fruta:', frutas[0])
+print('Última fruta:', frutas[-1])
+
+# Adicionando elementos na lista
+frutas.append('uva')
+print('Lista atualizada:', frutas)
+
+# Laços de repetição (for)
+for fruta in frutas:
+    print('Eu gosto de:', fruta)
+
+# While (repete enquanto a condição for verdadeira)
+contador = 0
+while contador < 3:
+    print('Contador:', contador)
+    contador += 1
+
+# Funções (blocos reutilizáveis de código)
+def saudacao(nome):
+    return f'Olá, {nome}! Seja bem-vindo.'
+
+mensagem = saudacao(nome)
+print(mensagem)
+
+# Entrada de dados do usuário (comentado pra não travar execução automática)
+# nome_usuario = input('Digite seu nome: ')
+# print(f'Prazer em te conhecer, {nome_usuario}!')
