@@ -110,3 +110,16 @@ print('Nome no dicionário:', pessoa['nome'])
 pessoa['profissao'] = 'Estudante'
 pessoa['idade'] = idade  # atualizando idade
 print('Dicionário atualizado:', pessoa)
+
+# Percorrendo dicionários
+for chave, valor in pessoa.items():
+    print(f'{chave}: {valor}')
+
+# Tuplas (imutáveis)
+cores = ('vermelho', 'verde', 'azul')
+print('Tupla de cores:', cores)
+
+# Desempacotamento de tupla
+cor1, cor2, cor3 = cores
+print('Cores separadas:', cor1, cor2, cor3)
+
