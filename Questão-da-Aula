@@ -123,3 +123,7 @@ print('Tupla de cores:', cores)
 cor1, cor2, cor3 = cores
 print('Cores separadas:', cor1, cor2, cor3)
 
+# Conversão de tipos (casting)
+numero_str = '10'
+numero_int = int(numero_str)
+print('String:', numero_str, '-> Inteiro:', numero_int)
