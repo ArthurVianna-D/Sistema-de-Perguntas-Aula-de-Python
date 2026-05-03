@@ -92,5 +92,21 @@ mensagem = saudacao(nome)
 print(mensagem)
 
 # Entrada de dados do usuário (comentado pra não travar execução automática)
-# nome_usuario = input('Digite seu nome: ')
-# print(f'Prazer em te conhecer, {nome_usuario}!')
+nome_usuario = input('Digite seu nome: ')
+print(f'Prazer em te conhecer, {nome_usuario}!')
+
+# Trabalhando com dicionários (estrutura chave:valor)
+pessoa = {
+    'nome': nome_completo,
+    'idade': idade,
+    'altura': altura,
+    'maior_de_idade': maior_de_idade
+}
+
+print('Dicionário pessoa:', pessoa)
+print('Nome no dicionário:', pessoa['nome'])
+
+# Podemos adicionar ou alterar valores no dicionário
+pessoa['profissao'] = 'Estudante'
+pessoa['idade'] = idade  # atualizando idade
+print('Dicionário atualizado:', pessoa)
