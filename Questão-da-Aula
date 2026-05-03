@@ -127,3 +127,31 @@ print('Cores separadas:', cor1, cor2, cor3)
 numero_str = '10'
 numero_int = int(numero_str)
 print('String:', numero_str, '-> Inteiro:', numero_int)
+
+# Manipulação de strings
+frase = 'Python é muito legal'
+print('Frase original:', frase)
+print('Tudo maiúsculo:', frase.upper())
+print('Tudo minúsculo:', frase.lower())
+print('Quantidade de caracteres:', len(frase))
+
+# Fatiamento de strings (slicing)
+print('Primeiras 6 letras:', frase[:6])
+print('Últimas 5 letras:', frase[-5:])
+
+# Verificando conteúdo
+print('Contém "Python"?', 'Python' in frase)
+
+# Tratamento de erros (try/except)
+try:
+    numero = int('abc')  # isso vai dar erro
+except ValueError:
+    print('Erro: não foi possível converter para número.')
+
+# Função com mais lógica
+def calcular_imc(peso, altura):
+    imc = peso / (altura ** 2)
+    return imc
+
+imc = calcular_imc(peso, altura)
+print(f'IMC: {imc:.2f}')
