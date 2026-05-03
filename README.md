@@ -1,1 +1,1 @@
-Estou colocando na rede um dos meus exercícios que estou realizando em meu curso de Python. 
+Estou compartilhando alguns dos meus exercícios que desenvolvi como parte do meu curso de Python.
