@@ -1,1 +1,1 @@
-Estou compartilhando alguns dos meus exercícios que desenvolvi como parte do meu curso de Python.
+Estou compartilhando alguns dos meus exercícios que desenvolvi como parte do meu curso de Python, com o objetivo de praticar os conceitos aprendidos e aprimorar minhas habilidades em lógica de programação, estruturas de controle e manipulação de dados.
