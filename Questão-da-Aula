@@ -155,3 +155,24 @@ def calcular_imc(peso, altura):
 
 imc = calcular_imc(peso, altura)
 print(f'IMC: {imc:.2f}')
+
+# Condicional com múltiplas verificações
+if imc < 18.5:
+    print('Abaixo do peso')
+elif imc < 25:
+    print('Peso normal')
+elif imc < 30:
+    print('Sobrepeso')
+else:
+    print('Obesidade')
+
+# List comprehension (forma compacta de criar listas)
+numeros = [1, 2, 3, 4, 5]
+quadrados = [n ** 2 for n in numeros]
+print('Quadrados:', quadrados)
+
+# Função lambda (função anônima)
+dobro = lambda x: x * 2
+print('Dobro de 5:', dobro(5))
+
+
