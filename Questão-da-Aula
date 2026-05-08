@@ -175,4 +175,32 @@ print('Quadrados:', quadrados)
 dobro = lambda x: x * 2
 print('Dobro de 5:', dobro(5))
 
+# Trabalhando com arquivos (básico)
+# with open('arquivo.txt', 'w') as arquivo:
+#     arquivo.write('Olá, mundo!')
 
+# with open('arquivo.txt', 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     print('Conteúdo do arquivo:', conteudo)
+
+# Módulos (bibliotecas)
+import math
+
+print('Raiz quadrada de 16:', math.sqrt(16))
+print('Valor de pi:', math.pi)
+
+# Gerando números aleatórios
+import random
+
+numero_aleatorio = random.randint(1, 10)
+print('Número aleatório entre 1 e 10:', numero_aleatorio)
+
+# Pequeno "sistema" só pra encher mais linguiça
+def verificar_numero(num):
+    if num % 2 == 0:
+        return 'Par'
+    else:
+        return 'Ímpar'
+
+for i in range(1, 6):
+    print(f'{i} é {verificar_numero(i)}')
