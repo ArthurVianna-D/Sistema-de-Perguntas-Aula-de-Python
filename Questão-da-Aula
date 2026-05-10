@@ -234,3 +234,26 @@ class Estudante(Pessoa):
 aluno = Estudante('Arthur', 17, 'Python')
 aluno.apresentar()
 aluno.mostrar_curso()
+
+# =========================
+# OUTROS EXMPLOS SOBRE LINHAS 
+# =========================
+
+numeros = [5, 2, 9, 1, 7]
+
+print('Lista original:', numeros)
+
+# Ordenando lista
+numeros.sort()
+print('Lista ordenada:', numeros)
+
+# Invertendo lista
+numeros.reverse()
+print('Lista invertida:', numeros)
+
+# Soma de elementos
+print('Soma dos números:', sum(numeros))
+
+# Maior e menor valor
+print('Maior número:', max(numeros))
+print('Menor número:', min(numeros))
