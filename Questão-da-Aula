@@ -217,3 +217,20 @@ class Pessoa:
 
     def apresentar(self):
         print(f'Olá, meu nome é {self.nome} e tenho {self.idade} anos.')
+
+# Criando um objeto
+pessoa1 = Pessoa('Arthur', 17)
+pessoa1.apresentar()
+
+# Herança
+class Estudante(Pessoa):
+    def __init__(self, nome, idade, curso):
+        super().__init__(nome, idade)
+        self.curso = curso
+
+    def mostrar_curso(self):
+        print(f'{self.nome} está estudando {self.curso}.')
+
+aluno = Estudante('Arthur', 17, 'Python')
+aluno.apresentar()
+aluno.mostrar_curso()
