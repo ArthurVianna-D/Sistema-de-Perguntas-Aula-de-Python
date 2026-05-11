@@ -257,3 +257,34 @@ print('Soma dos números:', sum(numeros))
 # Maior e menor valor
 print('Maior número:', max(numeros))
 print('Menor número:', min(numeros))
+
+# =========================
+# LOOP COM ENUMERATE
+# =========================
+
+nomes = ['Arthur', 'Maria', 'João']
+
+for indice, nome_atual in enumerate(nomes):
+    print(f'Índice: {indice} | Nome: {nome_atual}')
+
+# =========================
+# SETS (CONJUNTOS)
+# =========================
+
+# Sets não permitem valores duplicados
+valores = {1, 2, 3, 3, 3, 4, 5}
+
+print('Set:', valores)
+
+# Adicionando valor
+valores.add(10)
+print('Set atualizado:', valores)
+
+# =========================
+# OPERADORES LÓGICOS
+# =========================
+
+tem_dinheiro = True
+esta_chovendo = False
+
+print('Vai sair?', tem_dinheiro and not esta_chovendo)
