@@ -288,3 +288,84 @@ tem_dinheiro = True
 esta_chovendo = False
 
 print('Vai sair?', tem_dinheiro and not esta_chovendo)
+
+# =========================
+# FUNÇÕES COM PARÂMETROS PADRÃO
+# =========================
+
+def saudar(nome='Visitante'):
+    print(f'Olá, {nome}!')
+
+saudar()
+saudar('Arthur')
+
+# =========================
+# EMPACOTAMENTO DE ARGUMENTOS
+# =========================
+
+def somar(*numeros):
+    resultado = sum(numeros)
+    return resultado
+
+print('Soma:', somar(1, 2, 3, 4, 5))
+
+# =========================
+# USANDO BREAK E CONTINUE
+# =========================
+
+for numero in range(10):
+
+    if numero == 3:
+        continue  # pula o número 3
+
+    if numero == 8:
+        break  # para o loop
+
+    print('Número:', numero)
+
+# =========================
+# GERANDO SENHA ALEATÓRIA
+# =========================
+
+import string
+
+letras = string.ascii_letters
+numeros = string.digits
+caracteres = letras + numeros
+
+senha = ''
+
+for _ in range(10):
+    senha += random.choice(caracteres)
+
+print('Senha gerada:', senha)
+
+# =========================
+# CONTANDO PALAVRAS
+# =========================
+
+texto = 'Python é uma linguagem muito poderosa e muito divertida'
+
+palavras = texto.split()
+
+print('Lista de palavras:', palavras)
+print('Quantidade de palavras:', len(palavras))
+
+# =========================
+# CONTADOR DE LETRAS
+# =========================
+
+contador_letras = {}
+
+for letra in texto:
+
+    if letra == ' ':
+        continue
+
+    if letra in contador_letras:
+        contador_letras[letra] += 1
+    else:
+        contador_letras[letra] = 1
+
+print('Contagem de letras:')
+print(contador_letras)
