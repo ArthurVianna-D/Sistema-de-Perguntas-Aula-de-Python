@@ -369,3 +369,42 @@ for letra in texto:
 
 print('Contagem de letras:')
 print(contador_letras)
+
+# =========================
+# EXPRESSÕES BOOLEANAS
+# =========================
+
+usuario_logado = True
+usuario_admin = False
+
+if usuario_logado and usuario_admin:
+    print('Acesso total liberado.')
+elif usuario_logado:
+    print('Usuário comum logado.')
+else:
+    print('Usuário não está logado.')
+
+# =========================
+# SIMULANDO UM MENU
+# =========================
+
+print('\n===== MENU =====')
+print('1 - Ver perfil')
+print('2 - Editar perfil')
+print('3 - Sair')
+
+opcao = 1
+
+if opcao == 1:
+    print('Abrindo perfil...')
+elif opcao == 2:
+    print('Editando perfil...')
+elif opcao == 3:
+    print('Saindo...')
+else:
+    print('Opção inválida.')
+
+# =========================
+# FINAL ABSOLUTAMENTE DEFINITIVO
+# =========================
+
