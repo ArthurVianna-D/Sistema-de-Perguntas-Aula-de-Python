@@ -421,4 +421,18 @@ def dizer_oi():
 
 dizer_oi()
 
+# =========================
+# GERADORES (yield)
+# =========================
+
+def contador_infinito():
+    n = 0
+    while True:
+        yield n
+        n += 1
+
+gen = contador_infinito()
+print('Primeiros números do gerador:')
+for _ in range(5):
+    print(next(gen))
 
