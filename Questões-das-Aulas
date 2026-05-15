@@ -454,3 +454,14 @@ valores = [True, True, False]
 
 print('Todos são verdadeiros?', all(valores))
 print('Algum é verdadeiro?', any(valores))
+
+# =========================
+# FUNÇÕES RECURSIVAS
+# =========================
+
+def fatorial(n):
+    if n == 0:
+        return 1
+    return n * fatorial(n - 1)
+
+print('Fatorial de 5:', fatorial(5))
