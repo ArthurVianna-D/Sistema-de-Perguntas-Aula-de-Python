@@ -436,3 +436,12 @@ print('Primeiros números do gerador:')
 for _ in range(5):
     print(next(gen))
 
+# =========================
+# ZIP (JUNTANDO ITERÁVEIS)
+# =========================
+
+nomes = ['Arthur', 'Maria', 'João']
+idades = [17, 25, 30]
+
+dados = list(zip(nomes, idades))
+print('Dados combinados:', dados)
