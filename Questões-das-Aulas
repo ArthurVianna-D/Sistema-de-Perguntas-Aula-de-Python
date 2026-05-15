@@ -445,3 +445,12 @@ idades = [17, 25, 30]
 
 dados = list(zip(nomes, idades))
 print('Dados combinados:', dados)
+
+# =========================
+# ANY e ALL
+# =========================
+
+valores = [True, True, False]
+
+print('Todos são verdadeiros?', all(valores))
+print('Algum é verdadeiro?', any(valores))
