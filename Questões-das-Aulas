@@ -405,6 +405,20 @@ else:
     print('Opção inválida.')
 
 # =========================
-# FINAL ABSOLUTAMENTE DEFINITIVO
+# DECORATORS (FUNÇÕES QUE MODIFICAM OUTRAS)
 # =========================
+
+def meu_decorator(funcao):
+    def wrapper():
+        print('Antes da função')
+        funcao()
+        print('Depois da função')
+    return wrapper
+
+@meu_decorator
+def dizer_oi():
+    print('Oi!')
+
+dizer_oi()
+
 
