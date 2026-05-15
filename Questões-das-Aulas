@@ -465,3 +465,32 @@ def fatorial(n):
     return n * fatorial(n - 1)
 
 print('Fatorial de 5:', fatorial(5))
+
+# =========================
+# CONTEXT MANAGER PERSONALIZADO
+# =========================
+
+class MeuContexto:
+    def __enter__(self):
+        print('Entrando no contexto')
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print('Saindo do contexto')
+
+with MeuContexto():
+    print('Dentro do bloco with')
+
+# =========================
+# MAIS UM TIPO DE MATRIZ
+# =========================
+
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print('Matriz:')
+for linha in matriz:
+    print(linha)
