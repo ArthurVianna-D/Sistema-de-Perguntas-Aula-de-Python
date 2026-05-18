@@ -502,3 +502,11 @@ for linha in matriz:
 transposta = list(zip(*matriz))
 print('Transposta:', transposta)
 
+# =========================
+# FUNÇÃO COM TIPO (TYPE HINTS)
+# =========================
+
+def somar_numeros(a: int, b: int) -> int:
+    return a + b
+
+print('Soma com type hint:', somar_numeros(5, 10))
