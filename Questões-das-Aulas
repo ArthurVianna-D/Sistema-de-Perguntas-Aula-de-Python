@@ -494,3 +494,11 @@ matriz = [
 print('Matriz:')
 for linha in matriz:
     print(linha)
+
+# =========================
+# TRANSPOSTA DE MATRIZ
+# =========================
+
+transposta = list(zip(*matriz))
+print('Transposta:', transposta)
+
