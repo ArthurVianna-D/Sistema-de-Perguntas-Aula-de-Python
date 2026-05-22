@@ -576,3 +576,23 @@ print(texto)
 numero = 7
 resultado = 'Par' if numero % 2 == 0 else 'Ímpar'
 print('Resultado:', resultado)
+
+# =========================
+# FUNÇÃO COM KWARGS
+# =========================
+
+def mostrar_info(**dados):
+    for chave, valor in dados.items():
+        print(f'{chave}: {valor}')
+
+mostrar_info(nome='Arthur', idade=18, cidade='São Paulo')
+
+# =========================
+# CHECANDO SE ARQUIVO EXISTE
+# =========================
+
+import os
+
+arquivo_existe = os.path.exists('arquivo.txt')
+print('Arquivo existe?', arquivo_existe)
+
