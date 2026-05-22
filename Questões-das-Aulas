@@ -559,3 +559,20 @@ print('Original:', original)
 print('Cópia rasa:', copia_rasa)
 print('Cópia profunda:', copia_profunda)
 
+# =========================
+# FORMATANDO STRINGS
+# =========================
+
+nome = 'Arthur'
+idade = 18
+
+texto = 'Meu nome é {} e tenho {} anos'.format(nome, idade)
+print(texto)
+
+# =========================
+# OPERADOR TERNÁRIO
+# =========================
+
+numero = 7
+resultado = 'Par' if numero % 2 == 0 else 'Ímpar'
+print('Resultado:', resultado)
