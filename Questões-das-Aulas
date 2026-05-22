@@ -534,3 +534,28 @@ conta = Conta(100)
 print('Saldo inicial:', conta.saldo)
 conta.saldo = 200
 print('Novo saldo:', conta.saldo)
+
+# =========================
+# USANDO DEL
+# =========================
+
+lista = [1, 2, 3, 4, 5]
+del lista[2]
+print('Lista após remover índice 2:', lista)
+
+# =========================
+# COPY vs DEEP COPY
+# =========================
+
+import copy
+
+original = [[1, 2], [3, 4]]
+copia_rasa = copy.copy(original)
+copia_profunda = copy.deepcopy(original)
+
+original[0][0] = 99
+
+print('Original:', original)
+print('Cópia rasa:', copia_rasa)
+print('Cópia profunda:', copia_profunda)
+
