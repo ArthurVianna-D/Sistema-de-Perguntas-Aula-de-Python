@@ -510,3 +510,27 @@ def somar_numeros(a: int, b: int) -> int:
     return a + b
 
 print('Soma com type hint:', somar_numeros(5, 10))
+
+# =========================
+# CLASSE COM PROPERTY
+# =========================
+
+class Conta:
+    def __init__(self, saldo):
+        self._saldo = saldo
+
+    @property
+    def saldo(self):
+        return self._saldo
+
+    @saldo.setter
+    def saldo(self, valor):
+        if valor < 0:
+            print('Saldo não pode ser negativo')
+        else:
+            self._saldo = valor
+
+conta = Conta(100)
+print('Saldo inicial:', conta.saldo)
+conta.saldo = 200
+print('Novo saldo:', conta.saldo)
