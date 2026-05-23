@@ -617,3 +617,28 @@ for _ in range(1000000):
 
 fim = time.time()
 print('Tempo de execução:', fim - inicio)
+
+# =========================
+# USANDO RANGE AVANÇADO
+# =========================
+
+for i in range(0, 20, 5):
+    print('Contagem de 5 em 5:', i)
+
+# =========================
+# DESCOMPACTANDO LISTAS
+# =========================
+
+numeros = [1, 2, 3]
+a, b, c = numeros
+print('Valores:', a, b, c)
+
+# =========================
+# FUNÇÃO COM DOCSTRING
+# =========================
+
+def multiplicar(a, b):
+    """Retorna a multiplicação de dois números"""
+    return a * b
+
+print('Multiplicação:', multiplicar(3, 4))
