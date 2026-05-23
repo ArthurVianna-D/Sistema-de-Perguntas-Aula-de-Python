@@ -596,3 +596,24 @@ import os
 arquivo_existe = os.path.exists('arquivo.txt')
 print('Arquivo existe?', arquivo_existe)
 
+# =========================
+# PEGANDO ARGUMENTOS DO SISTEMA
+# =========================
+
+import sys
+
+print('Argumentos passados:', sys.argv)
+
+# =========================
+# MEDINDO TEMPO DE EXECUÇÃO
+# =========================
+
+import time
+
+inicio = time.time()
+
+for _ in range(1000000):
+    pass
+
+fim = time.time()
+print('Tempo de execução:', fim - inicio)
