@@ -642,3 +642,17 @@ def multiplicar(a, b):
     return a * b
 
 print('Multiplicação:', multiplicar(3, 4))
+
+# =========================
+# USANDO GLOBAL (evitar em geral)
+# =========================
+
+contador_global = 0
+
+def incrementar():
+    global contador_global
+    contador_global += 1
+
+incrementar()
+incrementar()
+print('Contador global:', contador_global)
