@@ -656,3 +656,12 @@ def incrementar():
 incrementar()
 incrementar()
 print('Contador global:', contador_global)
+
+
+# =========================
+# SET COMPREHENSION
+# =========================
+
+numeros = [1, 2, 2, 3, 4, 4, 5]
+unicos = {n for n in numeros}
+print('Valores únicos:', unicos)
