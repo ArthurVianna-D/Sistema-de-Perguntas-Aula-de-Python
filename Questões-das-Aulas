@@ -681,3 +681,14 @@ def criar_usuario(*, nome, idade):
     print(f'Usuário: {nome}, Idade: {idade}')
 
 criar_usuario(nome='Arthur', idade=18)
+
+# =========================
+# USANDO IS E IS NOT
+# =========================
+
+a = None
+
+if a is None:
+    print('a é None')
+
+
