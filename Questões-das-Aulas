@@ -710,3 +710,14 @@ ordenado = sorted(numeros)
 print('Original:', numeros)
 print('Ordenado:', ordenado)
 
+# =========================
+# FUNÇÃO COMO PARÂMETRO
+# =========================
+
+def aplicar(func, valor):
+    return func(valor)
+
+def triplo(x):
+    return x * 3
+
+print('Resultado:', aplicar(triplo, 5))
