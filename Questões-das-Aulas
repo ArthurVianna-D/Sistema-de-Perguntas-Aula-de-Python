@@ -691,4 +691,12 @@ a = None
 if a is None:
     print('a é None')
 
+# =========================
+# ITERANDO COM REVERSED
+# =========================
+
+lista = [1, 2, 3, 4]
+
+for item in reversed(lista):
+    print('Reverso:', item)
 
