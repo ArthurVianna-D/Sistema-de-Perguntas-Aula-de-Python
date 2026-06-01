@@ -721,3 +721,20 @@ def triplo(x):
     return x * 3
 
 print('Resultado:', aplicar(triplo, 5))
+
+# =========================
+# CLOSURE
+# =========================
+
+def contador():
+    n = 0
+    def incrementar():
+        nonlocal n
+        n += 1
+        return n
+    return incrementar
+
+c = contador()
+print(c())
+print(c())
+print(c())
