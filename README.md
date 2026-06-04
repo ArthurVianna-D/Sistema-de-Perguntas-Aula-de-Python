@@ -1,1 +1,1 @@
-Estou compartilhando alguns dos meus exercícios que desenvolvi como parte do meu curso de Python, com o objetivo de praticar os conceitos aprendidos e aprimorar minhas habilidades em lógica de programação, estruturas de controle e manipulação de dados. 
+I'm sharing some of the exercises I developed as part of my Python course, with the goal of practicing the concepts I've learned and improving my skills in programming logic, control structures, and data manipulation.
