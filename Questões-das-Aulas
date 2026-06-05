@@ -738,3 +738,11 @@ c = contador()
 print(c())
 print(c())
 print(c())
+
+# =========================
+# USANDO DIVMOD
+# =========================
+
+quociente, resto = divmod(10, 3)
+print('Quociente:', quociente, 'Resto:', resto)
+
