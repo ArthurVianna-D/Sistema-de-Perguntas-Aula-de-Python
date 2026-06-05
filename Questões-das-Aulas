@@ -746,3 +746,13 @@ print(c())
 quociente, resto = divmod(10, 3)
 print('Quociente:', quociente, 'Resto:', resto)
 
+# =========================
+# FUNÇÃO COM RETORNO MÚLTIPLO
+# =========================
+
+def operacoes(a, b):
+    return a + b, a - b
+
+soma, sub = operacoes(10, 5)
+print('Soma:', soma, 'Subtração:', sub)
+
