@@ -756,3 +756,12 @@ def operacoes(a, b):
 soma, sub = operacoes(10, 5)
 print('Soma:', soma, 'Subtração:', sub)
 
+# =========================
+# USANDO ENUMERATE COM START
+# =========================
+
+nomes = ['Ana', 'Bruno', 'Carlos']
+
+for i, nome in enumerate(nomes, start=1):
+    print(i, nome)
+
