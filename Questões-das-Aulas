@@ -765,3 +765,9 @@ nomes = ['Ana', 'Bruno', 'Carlos']
 for i, nome in enumerate(nomes, start=1):
     print(i, nome)
 
+# =========================
+# VERIFICANDO TODOS OS CARACTERES
+# =========================
+
+texto = '12345'
+print('Só números?', texto.isdigit())
