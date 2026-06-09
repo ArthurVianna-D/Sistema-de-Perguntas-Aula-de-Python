@@ -789,3 +789,13 @@ texto = 'a,b,c,d'
 partes = texto.split(',', 2)
 print('Split limitado:', partes)
 
+# =========================
+# FUNÇÃO COM DEFAULT MUTÁVEL (pegadinha)
+# =========================
+
+def adicionar_item(item, lista=[]):
+    lista.append(item)
+    return lista
+
+print(adicionar_item(1))
+print(adicionar_item(2)) #Evitar usar mutáveis como valor padrão.
