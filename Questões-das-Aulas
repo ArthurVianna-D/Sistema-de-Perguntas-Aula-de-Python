@@ -771,3 +771,12 @@ for i, nome in enumerate(nomes, start=1):
 
 texto = '12345'
 print('Só números?', texto.isdigit())
+
+# =========================
+# USANDO JOIN
+# =========================
+
+palavras = ['Python', 'é', 'top']
+frase = ' '.join(palavras)
+
+print('Frase:', frase)
