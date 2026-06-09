@@ -780,3 +780,12 @@ palavras = ['Python', 'é', 'top']
 frase = ' '.join(palavras)
 
 print('Frase:', frase)
+
+# =========================
+# SPLIT COM LIMITE
+# =========================
+
+texto = 'a,b,c,d'
+partes = texto.split(',', 2)
+print('Split limitado:', partes)
+
