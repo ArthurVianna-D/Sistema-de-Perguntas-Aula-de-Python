@@ -79,3 +79,26 @@ class Biblioteca:
         print(f'Disponíveis: {disponiveis}')
         print(f'Emprestados: {emprestados}')
 
+biblioteca = Biblioteca()
+
+biblioteca.adicionar_livro(
+    Livro(1, 'Clean Code', 'Robert Martin')
+)
+
+biblioteca.adicionar_livro(
+    Livro(2, 'Python Fluente', 'Luciano Ramalho')
+)
+
+biblioteca.adicionar_livro(
+    Livro(3, 'Algoritmos', 'Thomas Cormen')
+)
+
+biblioteca.listar_livros()
+
+biblioteca.emprestar(2)
+
+biblioteca.relatorio()
+
+biblioteca.devolver(2)
+
+biblioteca.relatorio()
