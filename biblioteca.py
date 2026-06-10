@@ -39,3 +39,43 @@ class Biblioteca:
                 return livro
 
         return None
+    
+    def emprestar(self, codigo):
+        livro = self.buscar_por_codigo(codigo)
+
+        if livro is None:
+            print('Livro não encontrado.')
+            return
+
+        if not livro.disponivel:
+            print('Livro já emprestado.')
+            return
+
+        livro.disponivel = False
+        print(f'"{livro.titulo}" emprestado com sucesso.')
+
+    def devolver(self, codigo):
+        livro = self.buscar_por_codigo(codigo)
+
+        if livro is None:
+            print('Livro não encontrado.')
+            return
+
+        livro.disponivel = True
+        print(f'"{livro.titulo}" devolvido com sucesso.')
+
+    def relatorio(self):
+        total = len(self.livros)
+
+        disponiveis = sum(
+            1 for livro in self.livros
+            if livro.disponivel
+        )
+
+        emprestados = total - disponiveis
+
+        print('\n===== RELATÓRIO =====')
+        print(f'Total: {total}')
+        print(f'Disponíveis: {disponiveis}')
+        print(f'Emprestados: {emprestados}')
+
